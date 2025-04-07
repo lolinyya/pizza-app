@@ -1,41 +1,34 @@
 <?php return array(
     'root' => array(
-        'name' => 'lolinyya/pizza-store',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'name' => 'lolinyya/pizza-app',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'f2d0de62ed1b8a814ae33ebebc2fd42b10d7e3b1',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'lolinyya/pizza-store' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+        'lolinyya/pizza-app' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'f2d0de62ed1b8a814ae33ebebc2fd42b10d7e3b1',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'phpstan/phpstan' => array(
-            'pretty_version' => '1.12.23',
-            'version' => '1.12.23.0',
-            'reference' => '29201e7a743a6ab36f91394eab51889a82631428',
+        'lolinyya/pizza-library' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'e88e3b6c102e2791ef6d321adcb2da54131ead39',
             'type' => 'library',
-            'install_path' => __DIR__ . '/../phpstan/phpstan',
-            'aliases' => array(),
-            'dev_requirement' => true,
-        ),
-        'squizlabs/php_codesniffer' => array(
-            'pretty_version' => '3.12.1',
-            'version' => '3.12.1.0',
-            'reference' => 'ea16a1f3719783345febd3aab41beb55c8c84bfd',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../squizlabs/php_codesniffer',
-            'aliases' => array(),
-            'dev_requirement' => true,
+            'install_path' => __DIR__ . '/../lolinyya/pizza-library',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
         ),
     ),
 );

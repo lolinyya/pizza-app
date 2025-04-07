@@ -1,14 +1,10 @@
+
 <?php
 
-declare(strict_types=1);
+namespace PizzaApp\Pizzas;
 
-namespace LullDev\PizzaStore\Pizzas;
+use PizzaLibrary\Products\Pizza;
 
-use LullDev\PizzaStore\Pizza;
-
-/**
- * Класс Сырной пиццы.
- */
 class CheesePizza extends Pizza
 {
     public function __construct()
@@ -16,5 +12,10 @@ class CheesePizza extends Pizza
         $this->name = 'Сырная пицца';
         $this->sauce = 'Томатный соус';
         $this->toppings = ['Моцарелла', 'Пармезан', 'Чеддер'];
+    }
+
+    public function bake(): void
+    {
+     
     }
 }

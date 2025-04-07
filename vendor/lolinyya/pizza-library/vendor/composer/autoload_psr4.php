@@ -6,6 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'PizzaLibrary\\' => array($vendorDir . '/lolinyya/pizza-library/src'),
-    'PizzaApp\\' => array($baseDir . '/src'),
+    'PizzaLibrary\\' => array($baseDir . '/src'),
 );

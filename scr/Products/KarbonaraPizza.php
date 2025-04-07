@@ -1,10 +1,9 @@
+
 <?php
 
-declare(strict_types=1);
+namespace PizzaApp\Pizzas;
 
-namespace LullDev\PizzaStore\Pizzas;
-
-use LullDev\PizzaStore\Pizza;
+use PizzaLibrary\Products\Pizza;
 
 class KarbonaraPizza extends Pizza
 {
@@ -13,5 +12,9 @@ class KarbonaraPizza extends Pizza
         $this->name = "Карбонара";
         $this->sauce = "Сливочный";
         $this->toppings = ["Бекон", "Яйца", "Пармезан"];
+    }
+    public function bake(): void
+    {
+     
     }
 }

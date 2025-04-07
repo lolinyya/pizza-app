@@ -1,0 +1,9 @@
+{
+    "name": "lolinyya/pizza-library",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "PizzaLibrary\\": "src/"
+        }
+    }
+}

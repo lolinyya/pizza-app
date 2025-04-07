@@ -1,14 +1,11 @@
+
 <?php
 
-declare(strict_types=1);
+namespace PizzaApp\Pizzas;
 
-namespace LullDev\PizzaStore\Pizzas;
+use PizzaLibrary\Products\Pizza;
 
-use LullDev\PizzaStore\Pizza;
-
-/**
- * Класс Пиццы Пепперони.
- */
+ 
 class PepperoniPizza extends Pizza
 {
     public function __construct()
@@ -16,5 +13,9 @@ class PepperoniPizza extends Pizza
         $this->name = 'Пепперони';
         $this->sauce = 'Томатный соус';
         $this->toppings = ['Моцарелла', 'Пепперони', 'Орегано'];
+    }
+    public function bake(): void
+    {
+     
     }
 }

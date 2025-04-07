@@ -4,22 +4,21 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc23baae6770a06703a03456be1125d24
+class ComposerStaticInit3c2028b6eb52b2be09288b17034f2b90
 {
+    public static $files = array (
+        '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
             'PizzaLibrary\\' => 13,
-            'PizzaApp\\' => 9,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
         'PizzaLibrary\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/lolinyya/pizza-library/src',
-        ),
-        'PizzaApp\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -32,9 +31,9 @@ class ComposerStaticInitc23baae6770a06703a03456be1125d24
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc23baae6770a06703a03456be1125d24::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc23baae6770a06703a03456be1125d24::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc23baae6770a06703a03456be1125d24::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3c2028b6eb52b2be09288b17034f2b90::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3c2028b6eb52b2be09288b17034f2b90::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit3c2028b6eb52b2be09288b17034f2b90::$classMap;
 
         }, null, ClassLoader::class);
     }
