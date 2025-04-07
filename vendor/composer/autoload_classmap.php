@@ -7,8 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'PizzaApp\\Pizzas\\CheesePizza' => $baseDir . '/src/Pizzas/CheesePizza.php',
-    'PizzaApp\\Pizzas\\KarbonaraPizza' => $baseDir . '/src/Pizzas/KarbonaraPizza.php',
-    'PizzaApp\\Pizzas\\PepperoniPizza' => $baseDir . '/src/Pizzas/PepperoniPizza.php',
-    'PizzaApp\\Stores\\NYPizzaStore' => $baseDir . '/src/Stores/NYPizzaStore.php',
 );

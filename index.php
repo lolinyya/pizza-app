@@ -1,30 +1,21 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
+
+declare(strict_types=1);
+
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use PizzaApp\Stores\NYPizzaStore;
 
-echo "Добро пожаловать в нашу пиццерию! \n";
+$store = new NYPizzaStore();
 
-$nyPizzaStore = new NYPizzaStore();
+// Заказываем сырную пиццу
+echo "Заказываем сырную пиццу:\n";
+$store->orderPizza('cheese');
 
-// Доступные виды пицц
-$pizzaTypes = [
-    'cheese' => 'Сырная',
-    'pepperoni' => 'Пепперони',
-    'karbonara' => 'Карбонара'
-];
+// Заказываем пиццу с пепперони
+echo "\nЗаказываем пиццу с пепперони:\n";
+$store->orderPizza('pepperoni');
 
-echo "Меню:\n";
-foreach ($pizzaTypes as $key => $name) {
-    echo " - {$key}: {$name}\n";
-}
-
-// Симуляция заказов
-echo "\nПриготовление пицц:\n";
-foreach (array_keys($pizzaTypes) as $type) {
-    echo "\n=== Заказ: {$pizzaTypes[$type]} ===\n";
-    $pizza = $nyPizzaStore->orderPizza($type);
-    echo " Готово: {$pizza->getName()}\n";
-}
-
-echo "\nПриятного аппетита! 🍽️\n";
+// Заказываем овощную пиццу
+echo "\nЗаказываем овощную пиццу:\n";
+$store->orderPizza('karbonara');

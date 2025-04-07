@@ -1,11 +1,8 @@
-
 <?php
-
 namespace PizzaApp\Pizzas;
 
 use PizzaLibrary\Products\Pizza;
 
- 
 class PepperoniPizza extends Pizza
 {
     public function __construct()
@@ -16,6 +13,6 @@ class PepperoniPizza extends Pizza
     }
     public function bake(): void
     {
-     
+        echo "Выпекаем 15 минут при 200°C\n";
     }
 }

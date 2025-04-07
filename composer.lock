@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "../pizza-library",
-                "reference": "6eec770e09600c3e5e5383e7b899dc4dceef2824"
+                "reference": "bd2421553d5d1b04520428fdb4f92e60b748c656"
             },
             "require": {
                 "php": "^8.0"

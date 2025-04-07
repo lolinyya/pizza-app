@@ -1,6 +1,4 @@
-
 <?php
-
 namespace PizzaApp\Pizzas;
 
 use PizzaLibrary\Products\Pizza;
@@ -15,6 +13,6 @@ class KarbonaraPizza extends Pizza
     }
     public function bake(): void
     {
-     
+        echo "Выпекаем 15 минут при 200°C\n";
     }
 }

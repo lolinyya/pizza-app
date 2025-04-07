@@ -27,10 +27,6 @@ class ComposerStaticInit6331b26d2f35dc663af8d91e79f5247e
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'PizzaApp\\Pizzas\\CheesePizza' => __DIR__ . '/../..' . '/src/Pizzas/CheesePizza.php',
-        'PizzaApp\\Pizzas\\KarbonaraPizza' => __DIR__ . '/../..' . '/src/Pizzas/KarbonaraPizza.php',
-        'PizzaApp\\Pizzas\\PepperoniPizza' => __DIR__ . '/../..' . '/src/Pizzas/PepperoniPizza.php',
-        'PizzaApp\\Stores\\NYPizzaStore' => __DIR__ . '/../..' . '/src/Stores/NYPizzaStore.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

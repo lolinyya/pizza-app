@@ -3,7 +3,7 @@
         'name' => 'lolinyya/pizza-app',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '4ed938cbe33ffe7eecb6cfe2a956c1e6d139ab25',
+        'reference' => '1b72a1d8804dd4b788c8ed55a397cf2cd7bc2203',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'lolinyya/pizza-app' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '4ed938cbe33ffe7eecb6cfe2a956c1e6d139ab25',
+            'reference' => '1b72a1d8804dd4b788c8ed55a397cf2cd7bc2203',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -22,7 +22,7 @@
         'lolinyya/pizza-library' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '6eec770e09600c3e5e5383e7b899dc4dceef2824',
+            'reference' => 'bd2421553d5d1b04520428fdb4f92e60b748c656',
             'type' => 'library',
             'install_path' => __DIR__ . '/../lolinyya/pizza-library',
             'aliases' => array(),
