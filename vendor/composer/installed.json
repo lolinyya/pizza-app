@@ -4,19 +4,14 @@
             "name": "lolinyya/pizza-library",
             "version": "dev-main",
             "version_normalized": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lolinyya/pizza-library.git",
-                "reference": "e88e3b6c102e2791ef6d321adcb2da54131ead39"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lolinyya/pizza-library/zipball/e88e3b6c102e2791ef6d321adcb2da54131ead39",
-                "reference": "e88e3b6c102e2791ef6d321adcb2da54131ead39",
-                "shasum": ""
+                "type": "path",
+                "url": "../pizza-library",
+                "reference": "6eec770e09600c3e5e5383e7b899dc4dceef2824"
             },
-            "time": "2025-04-07T12:44:20+00:00",
-            "default-branch": true,
+            "require": {
+                "php": "^8.0"
+            },
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -24,9 +19,8 @@
                     "PizzaLibrary\\": "src/"
                 }
             },
-            "support": {
-                "source": "https://github.com/lolinyya/pizza-library/tree/main",
-                "issues": "https://github.com/lolinyya/pizza-library/issues"
+            "transport-options": {
+                "relative": true
             },
             "install-path": "../lolinyya/pizza-library"
         }

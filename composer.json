@@ -4,15 +4,15 @@
         "php": "^8.0",
         "lolinyya/pizza-library": "dev-main"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../pizza-library"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "PizzaApp\\": "src/"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/lolinyya/pizza-library"
-        }
-    ]
+    }
 }

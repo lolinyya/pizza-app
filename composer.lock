@@ -4,34 +4,28 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37e836656bb77d2a26e32f3e758db63b",
+    "content-hash": "6331b26d2f35dc663af8d91e79f5247e",
     "packages": [
         {
             "name": "lolinyya/pizza-library",
             "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lolinyya/pizza-library.git",
-                "reference": "e88e3b6c102e2791ef6d321adcb2da54131ead39"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lolinyya/pizza-library/zipball/e88e3b6c102e2791ef6d321adcb2da54131ead39",
-                "reference": "e88e3b6c102e2791ef6d321adcb2da54131ead39",
-                "shasum": ""
+                "type": "path",
+                "url": "../pizza-library",
+                "reference": "6eec770e09600c3e5e5383e7b899dc4dceef2824"
             },
-            "default-branch": true,
+            "require": {
+                "php": "^8.0"
+            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "PizzaLibrary\\": "src/"
                 }
             },
-            "support": {
-                "source": "https://github.com/lolinyya/pizza-library/tree/main",
-                "issues": "https://github.com/lolinyya/pizza-library/issues"
-            },
-            "time": "2025-04-07T12:44:20+00:00"
+            "transport-options": {
+                "relative": true
+            }
         }
     ],
     "packages-dev": [],

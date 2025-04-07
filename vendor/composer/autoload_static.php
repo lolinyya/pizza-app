@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit37e836656bb77d2a26e32f3e758db63b
+class ComposerStaticInit6331b26d2f35dc663af8d91e79f5247e
 {
     public static $prefixLengthsPsr4 = array (
         'P' => 
@@ -27,14 +27,18 @@ class ComposerStaticInit37e836656bb77d2a26e32f3e758db63b
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'PizzaApp\\Pizzas\\CheesePizza' => __DIR__ . '/../..' . '/src/Pizzas/CheesePizza.php',
+        'PizzaApp\\Pizzas\\KarbonaraPizza' => __DIR__ . '/../..' . '/src/Pizzas/KarbonaraPizza.php',
+        'PizzaApp\\Pizzas\\PepperoniPizza' => __DIR__ . '/../..' . '/src/Pizzas/PepperoniPizza.php',
+        'PizzaApp\\Stores\\NYPizzaStore' => __DIR__ . '/../..' . '/src/Stores/NYPizzaStore.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit37e836656bb77d2a26e32f3e758db63b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit37e836656bb77d2a26e32f3e758db63b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit37e836656bb77d2a26e32f3e758db63b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6331b26d2f35dc663af8d91e79f5247e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6331b26d2f35dc663af8d91e79f5247e::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6331b26d2f35dc663af8d91e79f5247e::$classMap;
 
         }, null, ClassLoader::class);
     }
