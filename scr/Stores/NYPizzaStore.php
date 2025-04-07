@@ -1,24 +1,21 @@
+
 <?php
+namespace PizzaApp\Stores;
 
-declare(strict_types=1);
+use PizzaLibrary\Stores\PizzaStore;
+use PizzaApp\Pizzas\CheesePizza;
+use PizzaApp\Pizzas\PepperoniPizza;
+use PizzaApp\Pizzas\KarbonaraPizza;
 
-namespace LullDev\PizzaStore\Stores;
-
-use LullDev\PizzaStore\Pizza;
-use LullDev\PizzaStore\PizzaStore;
-use LullDev\PizzaStore\Pizzas\CheesePizza;
-use LullDev\PizzaStore\Pizzas\PepperoniPizza;
-use LullDev\PizzaStore\Pizzas\KarbonaraPizza;
-
-class NYPizzaStore extends PizzaStore
+class NYPizzaStore extends PizzaStore 
 {
-    protected function createPizza(string $type): Pizza
+    public function createPizza(string $type): \PizzaLibrary\Products\Pizza
     {
-        return match ($type) {
-            'cheese'    => new CheesePizza(),
+        return match($type) {
+            'cheese' => new CheesePizza(),
             'pepperoni' => new PepperoniPizza(),
             'karbonara' => new KarbonaraPizza(),
-            default     => throw new \Exception("Такой пиццы у нас нет: {$type}"),
+            default => throw new \InvalidArgumentException("Неизвестый тип пиццы: $type")
         };
     }
 }

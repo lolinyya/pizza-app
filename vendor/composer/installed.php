@@ -3,7 +3,7 @@
         'name' => 'lolinyya/pizza-app',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f2d0de62ed1b8a814ae33ebebc2fd42b10d7e3b1',
+        'reference' => '50c5384f7558b422e2617258f584d503f389559c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'lolinyya/pizza-app' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f2d0de62ed1b8a814ae33ebebc2fd42b10d7e3b1',
+            'reference' => '50c5384f7558b422e2617258f584d503f389559c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
