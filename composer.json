@@ -1,7 +1,7 @@
 {
     "name": "lolinyya/pizza-app",
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "lolinyya/pizza-library": "dev-main"
     },
     "repositories": [
